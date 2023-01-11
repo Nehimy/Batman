@@ -1,5 +1,20 @@
 #!/bin/bash
 
+Cian="\0033[0;36m"
+CianBold="\0033[1;36m"
+Red="\0033[0;31m"
+RedBold="\0033[1;31m"
+Lilac="\0033[0;35m"
+LilacBold="\0033[1;35m"
+Brown="\0033[0;33m"
+Grey="\0033[0;37m"
+White="\0033[1;39m"
+Yellow="\0033[1;33m"
+DarkGreen="\e[1;92m"
+LightRed="\e[1;91m"
+DarkGray="\e[1;90m"
+LightMagneta="\e[1;95m"
+
 function batman() {
 
     Batman=(
@@ -16,10 +31,12 @@ function batman() {
 
     )
 
+    Rainbow=($Red $LightRed $LightRed $Yellow $CianBold $CianBold $LightMagneta $LightMagneta $LightRed $Yellow)
 
     for (( i=0; i<=9; i++ ))
     do
-        echo -e $1 $e "${Batman[$i]}" '\e[0m'
+        #echo -e $1 $e "${Batman[$i]}" '\e[0m'
+        echo -e ${Rainbow[$i]} $e "${Batman[$i]}" '\e[0m'
         sleep 0.1
     done
     echo $e "           Batmaaaaaan ^^"
@@ -27,31 +44,17 @@ function batman() {
 }
 
 
-Cian="\0033[0;36m"
-CianBold="\0033[1;36m"
-Red="\0033[0;31m"
-RedBold="\0033[1;31m"
-Lilac="\0033[0;35m"
-LilacBold="\0033[1;35m"
-Brown="\0033[0;33m"
-Grey="\0033[0;37m"
-White="\0033[1;39m"
-Yellow="\0033[1;33m"
-DarkGreen="\e[1;92m"
-LightRed="\e[1;91m"
-DarkGray="\e[1;90m"
-LightMagneta="\e[1;95m"
 
-Rainbow=($Red $LightRed $Yellow $CianBold $LightMagneta $LightRed $Yellow)
+
+
 
 index=0
+
 maxIndex=${#Rainbow[@]}
 while true; do
     clear
-    batman ${Rainbow[$index]}
-    index=$((($index + 1) % $maxIndex))
+    #batman ${Rainbow[$index]}
+    batman
+    #index=$((($index + 1) % $maxIndex))
     sleep 1
 done;
-
-
-## estoy en otra brach
