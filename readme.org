@@ -1,3 +1,4 @@
 * Batman
  Esto es una prueba donde intento imprimir un ASCII de Batman donde cada linea tiene un color diferente.
- ** Imagen
+** Imagen
+ Esto es una imagen git que muesta la terminal con mi programa siendo ejecutado.
