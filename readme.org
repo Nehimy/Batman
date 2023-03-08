@@ -1,0 +1,11 @@
+* Batman
+ Esto es una prueba donde intento imprimir un ASCII de Batman donde cada linea tiene un color diferente.
+
+** Nota:
+Este mini proyecto tiene 2 ramas:
++ El primero tiene el ascii de Batman y cambia de color.
++ El segundo ascii cambia de color en cada franja.
+
+** Imagen
+ Esto es una imagen git que muesta la terminal con mi programa siendo ejecutado.
+[[https://imgur.com/Q2TNIbE.gif]]
